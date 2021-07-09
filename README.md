@@ -1,6 +1,6 @@
 # FreeCodeCamp.org---Responsive_Web_Design_Certification
 
-## Features
+## Front-end Concepts
 - Mobile-first Design, Responsive Web Design and Progressive Advancement
 - Google Lighthouse 100% score
 - Applied Accessibility and Inclusive Web Design
