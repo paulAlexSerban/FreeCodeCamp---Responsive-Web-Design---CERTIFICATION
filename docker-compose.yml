@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+    nodejs_febuild:
+        # takes the source fils from `./src`, compiles to browser ready files and puts the compiled files in `./dist`
+    nodejs_backend:
+        # takes files from `./dist` and serves them to the cleint browser
+    # mongodb_database:
+        # to be used as database for emails, comments and whatever is needsd if need

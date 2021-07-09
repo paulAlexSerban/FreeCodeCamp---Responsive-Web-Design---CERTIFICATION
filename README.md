@@ -5,6 +5,7 @@
 - Google Lighthouse 100% score
 - Applied Accessibility and Inclusive Web Design
 - Component-based development
+- '7-1 Sass Architecture' folder structure
 - Semnatic HTML
 - Validated HTML and CSS
 - Uses normalize.css
