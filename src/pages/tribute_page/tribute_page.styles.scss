@@ -1,3 +1,5 @@
-h1 {
-    color: red;
-}
+// STRUCTURE
+@import '../../ui_ux/structure/header/header.scss';
+
+// COMPONENTS
+@import '../../ui_ux/components/figure/figure.scss';
