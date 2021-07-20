@@ -14,6 +14,7 @@
   * [Live demo](https://)
   * [Code repository](https://github.com/paulAlexSerban/FCC-RWD-Tribute-Page-Jerry-Thomas)
   * [freeCodeCamp - User Stories](https://)
+  * [CodePen Demo](https://)
 
   ### Details
   * Google Lighthouse scores
