@@ -43,6 +43,7 @@ module.exports = {
   output: {
     filename: "scripts/[name].[contenthash].scripts.js",
     path: path.resolve(__dirname, "../dist"),
+    assetModuleFilename: 'assets/[name][ext]'
   },
   mode: "development",
   module: {
@@ -51,7 +52,7 @@ module.exports = {
         test: /\.(css|sass|scss)$/,
         use: [
           MiniCssExtractPlugin.loader,
-          {
+          { 
             loader: "css-loader",
             options: {
               importLoaders: 2,
@@ -79,20 +80,16 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg|gif|png|jpg|mp4|webm)(\?v=\d+\.\d+\.\d+)?$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-              name: "[name].[hash:7].[ext]",
-            },
-          },
-        ],
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource'
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: "html-loader"
       },
     ],
   },
@@ -101,6 +98,6 @@ module.exports = {
       filename: "styles/[name].[contenthash].styles.css",
     }),
     new CleanWebpackPlugin(),
-    ...htmlWebpackPluginPages,
+    ...htmlWebpackPluginPages
   ],
 };
